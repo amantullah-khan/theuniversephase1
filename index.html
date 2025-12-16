@@ -115,11 +115,50 @@
   font-style: italic;            /* Optional: italic style */
   color: gold;                   /* Keep your gold color */
 }
+    /* Navigation bar styling */
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.navbar a:hover {
+  color: gold; /* highlight on hover */
+}
 
   </style>
 </head>
 <body>
- <header>
+  <div class="navbar">
+  <a href="#gallery">Gallery</a>
+  <a href="#amenities">Amenities</a>
+  <a href="#contact">Contact Us</a>
+</div>
+
+  <section id="gallery">
+  <h2>🖼️ Gallery</h2>
+  <!-- carousel code -->
+</section>
+
+<section id="amenities">
+  <h2>🛠️ Amenities</h2>
+  <!-- amenities list -->
+</section>
+
+<section id="contact">
+  <h2>📞 Contact Us</h2>
+  <!-- contact form -->
+</section>
+
+   <header>
 <h1 class="gold-heading">
   <span>The Universe Phase 1</span><br></h1>
   <p style="text-align:center; font-weight:normal;">
@@ -251,6 +290,7 @@
   </section>
 </body>
 </html>
+
 
 
 
