@@ -14,14 +14,14 @@
       line-height: 1.6;
     }
 
-header, section, footer {
-  max-width: 100%;       /* full width */
-  margin: 0;             /* no margins */
-  background: transparent; /* no white background */
-  padding: 20px;
-  border-radius: 0;      /* remove rounded corners */
-  box-shadow: none;      /* remove shadow */
-}
+    header, section, footer {
+      max-width: 100%;
+      margin: 0;
+      background: transparent;
+      padding: 20px;
+      border-radius: 0;
+      box-shadow: none;
+    }
 
     h1, h2 {
       color: #2c3e50;
@@ -105,95 +105,90 @@ header, section, footer {
       .carousel { height: 250px; }
     }
 
-    .gold-heading {
-  background: linear-gradient(to right, #FFD700, #FFA500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-  .gold-heading span {
-  font-family: 'Georgia', serif; /* Example: elegant serif font */
-  font-style: italic;            /* Optional: italic style */
-  color: #FFFDD0;                   /* Keep your gold color */
-}
-    /* Navigation bar styling */
-.navbar {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
+    /* Heading styles */
+    .gold-heading span {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      color: #FFFDD0; /* cream */
+    }
 
-.navbar a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #2c3e50;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-}
-
-.navbar a:hover {
-  color: gold; /* highlight on hover */
-}
     .blue-text {
-  color: blue;
-}
+      color: blue;
+      font-family: 'Georgia', serif;
+      font-style: italic;
+    }
 
+    /* Navigation bar styling */
+    .navbar {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    .navbar a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar a:hover {
+      color: gold;
+    }
   </style>
 </head>
 <body>
   <div class="navbar">
-  <a href="#gallery">Gallery</a>
-  <a href="#amenities">Amenities</a>
-  <a href="#contact">Contact Us</a>
-</div>
-
-<header>
-  <div style="display:flex; align-items:center; justify-content:space-between;">
-
-    <!-- Left side: Title -->
-    <div style="flex:1; text-align:left;">
-      <h1 class="gold-heading">
-        <span>The Universe Phase 1</span><br>
-        <span class="blue-text"> (Venus & Neptune Co-Operative Housing Society) </span>
-        </h1>
-      <p style="font-weight:bold; margin-top:5px;">
-        SOC. REGN. NO. TNA(TNA)/HSQ/(TC)/37248/2025
-      </p>
-    </div>
-
-    <!-- Middle: Logo -->
-    <div style="flex:1; text-align:center;">
-      <img src="image/logo.png" alt="Society Logo" style="height:100px;">
-    </div>
-
-    <!-- Right side: Quick Links -->
-    <div style="flex:1; text-align:right;">
-      <nav>
-        <a href="https://propertytax.thanecity.gov.in" target="_blank" 
-           style="margin-right:15px; text-decoration:none; color:#2c3e50; font-weight:bold;">
-          🏢 TMC Property Tax
-        </a>
-        <a href="https://maharerait.maharashtra.gov.in/public/project/view/14293" target="_blank" 
-           style="text-decoration:none; color:#2c3e50; font-weight:bold;">
-          📑 Maha RERA
-        </a>
-      </nav>
-    </div>
-
+    <a href="#gallery">Gallery</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#contact">Contact Us</a>
   </div>
 
-  <!-- Tagline below -->
-  <h2 style="text-align:center; margin-top:20px;">🏡 A World of Sophistication and Style</h2>
-  <p style="text-align:center; font-weight:bold;">
-    Step into a community designed for comfort, elegance, and modern living...
-  </p>
-</header>
+  <header>
+    <div style="display:flex; align-items:center; justify-content:space-between;">
+      <!-- Left side: Title -->
+      <div style="flex:1; text-align:left;">
+        <h1>
+          <span class="gold-heading">The Universe Phase 1</span><br>
+          <span class="blue-text">(Venus & Neptune Co-Operative Housing Society)</span>
+        </h1>
+        <p style="font-weight:bold; margin-top:5px;">
+          SOC. REGN. NO. TNA(TNA)/HSQ/(TC)/37248/2025
+        </p>
+      </div>
 
-  <section>
+      <!-- Middle: Logo -->
+      <div style="flex:1; text-align:center;">
+        <img src="image/logo.png" alt="Society Logo" style="height:100px;">
+      </div>
+
+      <!-- Right side: Quick Links -->
+      <div style="flex:1; text-align:right;">
+        <nav>
+          <a href="https://propertytax.thanecity.gov.in" target="_blank" style="margin-right:15px; text-decoration:none; color:#2c3e50; font-weight:bold;">
+            🏢 TMC Property Tax
+          </a>
+          <a href="https://maharerait.maharashtra.gov.in/public/project/view/14293" target="_blank" style="text-decoration:none; color:#2c3e50; font-weight:bold;">
+            📑 Maha RERA
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Tagline below -->
+    <h2 style="text-align:center; margin-top:20px;">🏡 A World of Sophistication and Style</h2>
+    <p style="text-align:center; font-weight:bold;">
+      Step into a community designed for comfort, elegance, and modern living...
+    </p>
+  </header>
+
+  <section id="gallery">
     <h2>🖼️ Gallery</h2>
     <div class="carousel" aria-label="Image carousel of society">
-      <img src="image\view-image.jpg" alt="High-rise residential buildings" class="active">
-      <img src="image\universe-gate.jpg" alt="Sunset over towers">
-      <img src="image\fullview.jpg" alt="Families enjoying landscaped gardens">
+      <img src="image/view-image.jpg" alt="High-rise residential buildings" class="active">
+      <img src="image/universe-gate.jpg" alt="Sunset over towers">
+      <img src="image/fullview.jpg" alt="Families enjoying landscaped gardens">
       <img src="image/committee.jpg" alt="Our Committee Members">
 
       <!-- Navigation -->
@@ -210,48 +205,7 @@ header, section, footer {
     </div>
   </section>
 
-  <!-- Other sections remain unchanged -->
-
-  <footer>
-    © 2025 The Universe Housing Society. All rights reserved.
-  </footer>
-
-  <script>
-    const slides = document.querySelectorAll('.carousel img');
-    const prevBtn = document.querySelector('.carousel .prev');
-    const nextBtn = document.querySelector('.carousel .next');
-    const indicators = document.querySelectorAll('.carousel-indicators button');
-    let current = 0;
-    const slideInterval = 4000;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-        indicators[i].classList.toggle('active', i === index);
-      });
-      current = index;
-    }
-
-    function showNextSlide() {
-      let nextIndex = (current + 1) % slides.length;
-      showSlide(nextIndex);
-    }
-
-    function showPrevSlide() {
-      let prevIndex = (current - 1 + slides.length) % slides.length;
-      showSlide(prevIndex);
-    }
-
-    nextBtn.addEventListener('click', showNextSlide);
-    prevBtn.addEventListener('click', showPrevSlide);
-
-    indicators.forEach((btn, i) => {
-      btn.addEventListener('click', () => showSlide(i));
-    });
-
-    setInterval(showNextSlide, slideInterval);
-  </script>
-<section>
+  <section>
     <h2>🌆 About Us</h2>
     <ul>
       <li>Grand entrance with iconic design inspired by local culture</li>
@@ -261,7 +215,7 @@ header, section, footer {
     </ul>
   </section>
 
-  <section>
+  <section id="amenities">
     <h2>🛠️ Amenities</h2>
     <ul>
       <li>🏋️‍♂️ Fitness Center & Gym with latest equipment</li>
@@ -274,42 +228,16 @@ header, section, footer {
   </section>
 
   <section>
-    <h2>📍Our Location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.8494188772083!2d73.0276744!3d19.1580676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf1e71112acb%3A0x291c9a78f22647c9!2sThe%20Universe!5e0!3m2!1sen!2sin!4v1765877232187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-  <section>
-    <h2>📞 Contact Us</h2>
-    <ul>
-      <form action="mailto:info@theuniversehousing.com" method="post" enctype="text/plain">
-  <label>Name:</label><input type="text" name="name"><br>
-  <label>Email:</label><input type="email" name="email"><br>
-  <label>Message:</label><textarea name="message"></textarea><br>
-        
-  <input type="submit" value="Send">
-</form>
-        <li>📍 Address: The Universe society, Kalsekar College, near GHC Hospital, Kausa, Mumbra, Thane, Maharashtra 400612</li>
-    </ul>
+    <h2>📍 Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
-</body>
-</html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
+    <form action="mailto:info@theuniversehousing.com" method="post" enctype="text/plain">
+      <label>Name:</label><input type="text" name="name"><br>
+      <label>Email:</label><input type="email" name="email"><br>
+      <label>Message:</label><textarea name="message"></textarea><br>
+      <input type="submit" value="Send">
+    </form>
+    <p>📍 Address: The Universe society, Kalsekar College, near GHC Hospital, Kausa, Mumbra, Th
